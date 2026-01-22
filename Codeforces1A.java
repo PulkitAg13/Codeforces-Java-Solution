@@ -15,5 +15,3 @@ public class Codeforces1A {
         System.out.println(ans);
     }
 }
-
-}
