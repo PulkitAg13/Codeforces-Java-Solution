@@ -1,6 +1,7 @@
 import java.util.Scanner;
 
 public class Codeforces486A {
+    public static void main(String[] args) {
     Scanner sc = new Scanner(System.in);
         long n = sc.nextLong();
 
@@ -9,4 +10,6 @@ public class Codeforces486A {
         } else {
             System.out.println(-(n + 1) / 2);
         }
+    }
 }
+
