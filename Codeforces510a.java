@@ -1,6 +1,6 @@
 import java.util.Scanner;
 
-public class Codeforces510a {
+public class Codeforces510A {
     public static void main(String[] args) {
         Scanner sc = new Scanner(System.in);
 
