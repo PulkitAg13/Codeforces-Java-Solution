@@ -7,26 +7,19 @@ public class Codeforces1857A {
 
         while (t-- > 0) {
             int n = sc.nextInt();
-            int even = 0;
             int odd = 0;
 
             for (int i = 0; i < n; i++) {
                 int x = sc.nextInt();
-                if (x % 2 == 0) {
-                    even++;
-                } else {
+                if (x % 2 != 0) {
                     odd++;
                 }
             }
 
-            if (odd == 0) {
+            if (odd % 2 == 0) {
                 System.out.println("YES");
-            } 
-            else if (even == 0) {
+            } else {
                 System.out.println("NO");
-            } 
-            else {
-                System.out.println("YES");
             }
         }
     }
