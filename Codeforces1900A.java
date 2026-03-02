@@ -9,8 +9,9 @@ public class Codeforces1900A {
             int n = sc.nextInt();
             String s = sc.next();
             
+            int countDot = 0;
+            int maxSeg = 0;
             int i = 0;
-            int ans = 0;
             
             while(i < n){
                 if(s.charAt(i) == '.'){
@@ -19,16 +20,18 @@ public class Codeforces1900A {
                         len++;
                         i++;
                     }
-                    
-                    if(len == 1) ans += 1;
-                    else if(len == 2) ans += 2;
-                    else ans += 2;
+                    maxSeg = Math.max(maxSeg, len);
+                    countDot += len;
                 } else {
                     i++;
                 }
             }
             
-            System.out.println(ans);
+            if(maxSeg >= 3){
+                System.out.println(2);
+            } else {
+                System.out.println(countDot);
+            }
         }
     }
 }
