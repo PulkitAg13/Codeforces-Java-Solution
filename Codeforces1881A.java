@@ -14,16 +14,22 @@ public class Codeforces1881A {
 
             int count = 0;
 
-            while(x.length() <= 2*m){
-                if(x.contains(s)){
-                    System.out.println(count);
-                    break;
-                }
+            while(x.length() < s.length()){
                 x = x + x;
                 count++;
             }
 
-            if(!x.contains(s)){
+            if(x.contains(s)){
+                System.out.println(count);
+                continue;
+            }
+
+            x = x + x;
+            count++;
+
+            if(x.contains(s)){
+                System.out.println(count);
+            }else{
                 System.out.println(-1);
             }
         }
