@@ -14,7 +14,7 @@ public class Codeforces1850C {
                     g[i][j] = s.charAt(j);
                 }
             }
-
+                    
             for(int j=0;j<8;j++){
                 String ans = "";
                 for(int i=0;i<8;i++){
